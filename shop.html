@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Fleur Lush</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="website_images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="website_images/fleurlushlogo.png" alt="Fleur Lush Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger icon -->
+    <div class="hamburger" id="hamburger">
+        &#9776; 
+    </div>
+        <div class="cart">
+            <a href="cart.html"><img src="website_images/shopping_cart.png" alt="Cart"></a>
+        </div>
+    </header>
+
+    <!-- Modal for item added confirmation -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-message"></p> 
+        </div>
+    </div>
+
+    <!-- Shop Main Section -->
+    <main>
+        <section class="shop-page">
+            <h1 class="shop-title">Make someone smile today.</h1>
+            <div class="bouquet-grid">
+                <div class="bouquet-item">
+                    <img src="website_images/tulips.png" alt="Tulips Bouquet">
+                    <h3>Tulips Bouquet</h3>
+                    <p>₱1,500</p>
+                    <button class="add-to-cart" onclick="addItemToCart('Tulips Bouquet', 1500)">Add to Cart</button>
+                </div>
+                <div class="bouquet-item">
+                    <img src="website_images/roses.png" alt="Rose Bouquet">
+                    <h3>Rose Bouquet</h3>
+                    <p>₱2,500</p>
+                    <button class="add-to-cart" onclick="addItemToCart('Rose Bouquet', 2500)">Add to Cart</button>
+                </div>
+                <div class="bouquet-item">
+                    <img src="website_images/carnations.png" alt="Carnations Bouquet">
+                    <h3>Carnations Bouquet</h3>
+                    <p>₱2,000</p>
+                    <button class="add-to-cart" onclick="addItemToCart('Carnations Bouquet', 2000)">Add to Cart</button>
+                </div>
+                <div class="bouquet-item">
+                    <img src="website_images/sunflower_roses.png" alt="Sunflower Bouquet">
+                    <h3>Sunflower Bouquet</h3>
+                    <p>₱1,500</p>
+                    <button class="add-to-cart" onclick="addItemToCart('Sunflower Bouquet', 1500)">Add to Cart</button>
+                </div>
+                <div class="bouquet-item">
+                    <img src="website_images/baby_breath.png" alt="Baby's-breath Bouquet">
+                    <h3>Baby's-breath Bouquet</h3>
+                    <p>₱1,500</p>
+                    <button class="add-to-cart" onclick="addItemToCart('Baby breath Bouquet', 1500)">Add to Cart</button>
+
+                </div>
+                <div class="bouquet-item">
+                    <img src="website_images/orchid.png" alt="Orchid Bouquet">
+                    <h3>Orchid Bouquet</h3>
+                    <p>₱1,500</p>
+                    <button class="add-to-cart" onclick="addItemToCart('Orchid Bouquet', 1500)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
